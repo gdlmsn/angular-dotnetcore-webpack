@@ -9,34 +9,52 @@
     "type": "git",
     "url": "https://github.com/gdlmsn/angular-dotnetcore-webpack.git"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "concurrently \"webpack-dev-server --env=dev --open --hot --inline --port 8080\" \"dotnet run\" ",
+    "webpack-dev": "webpack --env=dev",
+    "webpack-production": "webpack --env=prod",
+    "build": "npm run webpack-dev",
+    "build-dev": "npm run webpack-dev",
+    "build-production": "npm run webpack-production",
+    "watch-webpack-dev": "webpack --env=dev --watch --color",
+    "watch-webpack-production": "npm run build-production --watch --color"
+  },
   "dependencies": {
-    "@angular-devkit/build-angular": "^0.13.2",
     "@angular/animations": "^7.2.5",
-    "@angular/cli": "^7.3.2",
     "@angular/common": "^7.2.5",
     "@angular/compiler": "^7.2.5",
-    "@angular/compiler-cli": "^7.2.5",
     "@angular/core": "^7.2.5",
     "@angular/forms": "^7.2.5",
     "@angular/http": "^7.2.5",
-    "@angular/language-service": "^7.2.5",
     "@angular/platform-browser": "^7.2.5",
     "@angular/platform-browser-dynamic": "^7.2.5",
     "@angular/router": "^7.2.5",
-    "@types/jasmine": "^3.3.9",
-    "@types/node": "^11.9.4",
-    "codelyzer": "^4.5.0",
-    "jasmine": "^3.3.1",
-    "karma": "^4.0.0",
-    "protractor": "^5.4.2",
+    "@ngtools/webpack": "^7.3.2",
     "rxjs": "^6.4.0",
-    "ts-node": "^8.0.2",
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.3",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
-    "webpack": "^4.29.5"
+    "@angular-devkit/build-angular": "^0.13.2",
+    "@angular/cli": "^7.3.2",
+    "@angular/compiler-cli": "^7.2.5",
+    "@angular/language-service": "^7.2.5",
+    "@types/jasmine": "^3.3.9",
+    "@types/node": "^11.9.4",
+    "codelyzer": "^4.5.0",
+    "concurrently": "^4.1.0",
+    "jasmine": "^3.3.1",
+    "karma": "^4.0.0",
+    "protractor": "^5.4.2",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "-vs-binding": {
+    "ProjectOpened": [
+      "watch-webpack-dev"
+    ]
   }
 }
