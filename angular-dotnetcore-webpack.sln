@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angular-dotnetcore-webpack", "angular-dotnetcore-webpack\angular-dotnetcore-webpack.csproj", "{D9B3C649-5A59-45B7-ACD2-7562C9671EEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B3C649-5A59-45B7-ACD2-7562C9671EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B3C649-5A59-45B7-ACD2-7562C9671EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B3C649-5A59-45B7-ACD2-7562C9671EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B3C649-5A59-45B7-ACD2-7562C9671EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC8FF4B6-6CE9-46BE-A1F9-2AE717DCF446}
+	EndGlobalSection
+EndGlobal
