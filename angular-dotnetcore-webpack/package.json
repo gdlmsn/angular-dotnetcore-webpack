@@ -1,0 +1,42 @@
+{
+  "name": "angular-dotnetcore-webpack",
+  "version": "1.0.0",
+  "description": "Angular 7 WebApp with Dotnet Core 2.2 & Webpack 4.",
+  "main": "wwwroot/index.html",
+  "author": "gdlmsn",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdlmsn/angular-dotnetcore-webpack.git"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@angular-devkit/build-angular": "^0.13.2",
+    "@angular/animations": "^7.2.5",
+    "@angular/cli": "^7.3.2",
+    "@angular/common": "^7.2.5",
+    "@angular/compiler": "^7.2.5",
+    "@angular/compiler-cli": "^7.2.5",
+    "@angular/core": "^7.2.5",
+    "@angular/forms": "^7.2.5",
+    "@angular/http": "^7.2.5",
+    "@angular/language-service": "^7.2.5",
+    "@angular/platform-browser": "^7.2.5",
+    "@angular/platform-browser-dynamic": "^7.2.5",
+    "@angular/router": "^7.2.5",
+    "@types/jasmine": "^3.3.9",
+    "@types/node": "^11.9.4",
+    "codelyzer": "^4.5.0",
+    "jasmine": "^3.3.1",
+    "karma": "^4.0.0",
+    "protractor": "^5.4.2",
+    "rxjs": "^6.4.0",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
+    "zone.js": "^0.8.29"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.5"
+  }
+}
