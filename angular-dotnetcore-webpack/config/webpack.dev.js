@@ -1,5 +1,5 @@
 ﻿const path = require('path');
-//const rxPaths = require('rxjs/_esm5/path-mapping');
+const rxPaths = require('rxjs/_esm5/path-mapping');
 
 const webpack = require('webpack');
 
@@ -14,15 +14,16 @@ const ROOT = path.resolve(__dirname, '..');
 
 console.log('@@@@@@@@@ USING DEVELOPMENT @@@@@@@@@@@@@@@');
 
-module.export = {
+module.exports = {
+    mode: 'development',
     devtool: 'source-map',
     performance: {
         hints: false
     },
     entry: {
-        polyfills: './angularApp/polyfills.ts',
-        vendor: './angularApp/vendor.ts',
-        app: './angularApp/main.ts'
+        polyfills: './clientApp/polyfills.ts',
+        vendor: './clientApp/vendor.ts',
+        app: './clientApp/main.ts'
     },
 
     output: {
@@ -70,12 +71,12 @@ module.export = {
             },
             {
                 test: /\.scss$/,
-                include: path.join(ROOT, 'angularApp/styles'),
+                include: path.join(ROOT, 'clientApp/styles'),
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.scss$/,
-                exclude: path.join(ROOT, 'angularApp/styles'),
+                exclude: path.join(ROOT, 'clientApp/styles'),
                 use: ['raw-loader', 'sass-loader']
             },
             {
@@ -113,11 +114,11 @@ module.export = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             inject: 'body',
-            template: 'angularApp/index.html'
+            template: 'clientApp/index.html'
         }),
 
         new CopyWebpackPlugin([
-            { from: './angularApp/images/*.*', to: 'assets/', flatten: true }
+            { from: './clientApp/images/*.*', to: 'assets/', flatten: true }
         ]),
 
         new FilterWarningsPlugin({

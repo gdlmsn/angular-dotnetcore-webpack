@@ -7,10 +7,49 @@
     <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="%2a%2a\**" />
+    <Compile Remove="angularApp\**" />
+    <Content Remove="%2a%2a\**" />
+    <Content Remove="angularApp\**" />
+    <EmbeddedResource Remove="%2a%2a\**" />
+    <EmbeddedResource Remove="angularApp\**" />
+    <None Remove="%2a%2a\**" />
+    <None Remove="angularApp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="%2a%2a\%2a.config" />
+    <Content Remove="%2a%2a\%2a.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="clientApp\components\home\home.component.ts" />
+    <None Remove="clientApp\components\home\home.module.ts" />
+    <None Remove="clientApp\components\shared\navigation\navigation.component.ts" />
+    <None Remove="clientApp\shared.module.ts" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="clientApp\models\" />
+    <Folder Include="clientApp\services\" />
+    <Folder Include="clientApp\pipes\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="clientApp\components\home\components\home.component.ts" />
+    <TypeScriptCompile Include="clientApp\components\home\home.module.ts" />
+    <TypeScriptCompile Include="clientApp\components\shared\navigation\navigation.component.ts" />
+    <TypeScriptCompile Include="clientApp\components\shared\shared.module.ts" />
   </ItemGroup>
 
 </Project>

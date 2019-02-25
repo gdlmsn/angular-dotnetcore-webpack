@@ -18,9 +18,9 @@ console.log('@@@@@@@@@ USING PRODUCTION @@@@@@@@@@@@@@@');
 module.exports = {
     mode: 'production',
     entry: {
-        polyfills: './angularApp/polyfills.ts',
-        vendor: './angularApp/vendor.ts',
-        app: './angularApp/main-aot.ts',
+        polyfills: './clientApp/polyfills.ts',
+        vendor: './clientApp/vendor.ts',
+        app: './clientApp/main-aot.ts'
     },
 
     output: {
@@ -73,7 +73,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                include: path.join(ROOT, 'angularApp/styles'),
+                include: path.join(ROOT, 'clientApp/styles'),
                 use: ['style-loader', 'css-loader', 'sass-loader'],
                 parser: {
                     system: true,
@@ -81,7 +81,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                exclude: path.join(ROOT, 'angularApp/styles'),
+                exclude: path.join(ROOT, 'clientApp/styles'),
                 use: ['raw-loader', 'sass-loader'],
                 parser: {
                     system: true,
@@ -104,7 +104,7 @@ module.exports = {
         // }),
         new webpackTools.AngularCompilerPlugin({
             tsConfigPath: './tsconfig-aot.json',
-            // entryModule: './angularApp/app/app.module#AppModule'
+            // entryModule: './clientApp/app/app.module#AppModule'
         }),
 
         // new webpack.optimize.ModuleConcatenationPlugin(),
@@ -130,12 +130,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             inject: 'body',
-            template: 'angularApp/index.html',
+            template: 'clientApp/index.html',
             chunksSortMode: 'none',
         }),
 
         new CopyWebpackPlugin([
-            { from: './angularApp/images/*.*', to: 'assets/', flatten: true },
+            { from: './clientApp/images/*.*', to: 'assets/', flatten: true },
         ]),
 
         new FilterWarningsPlugin({
