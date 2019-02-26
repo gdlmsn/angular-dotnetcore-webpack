@@ -22,7 +22,7 @@ var AppModule = (function () {
                 BrowserModule,
                 AppRoutes,
                 SharedModule,
-                HomeModule,
+                HomeModule
             ],
             bootstrap: [AppComponent]
         })
