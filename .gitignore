@@ -259,3 +259,8 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/angular-dotnetcore-webpack/clientApp/styles/theme1.css.map
+/angular-dotnetcore-webpack/clientApp/styles/theme1.min.css
+/angular-dotnetcore-webpack/clientApp/styles/theme2.css.map
+/angular-dotnetcore-webpack/clientApp/styles/theme2.min.css
+/angular-dotnetcore-webpack/clientApp/styles/color-function.css.map

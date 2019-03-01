@@ -1,2 +1,9 @@
-﻿@import './styles/custom.scss';
+﻿@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import 'styles/_customVariables.scss';
+@import 'styles/_color-function.scss';
+@import "styles/theme1.scss";
+@import "styles/theme2.scss";
 @import "~bootstrap/scss/bootstrap";
+/*@import "font-awesome/scss/font-awesome";*/
