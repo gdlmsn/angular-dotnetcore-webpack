@@ -1,6 +1,7 @@
 ﻿import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { HomeComponent } from "./components/home.component";
+import { HomeRoutes } from "./home.routes";
 
 
 
@@ -10,7 +11,8 @@ import { HomeComponent } from "./components/home.component";
     ],
 
     imports: [
-        CommonModule
+        CommonModule,
+        HomeRoutes
     ],
 
     exports: [

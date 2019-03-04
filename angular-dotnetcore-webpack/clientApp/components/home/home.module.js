@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { HomeComponent } from "./components/home.component";
+import { HomeRoutes } from "./home.routes";
 var HomeModule = (function () {
     function HomeModule() {
     }
@@ -16,7 +17,8 @@ var HomeModule = (function () {
                 HomeComponent
             ],
             imports: [
-                CommonModule
+                CommonModule,
+                HomeRoutes
             ],
             exports: [
                 HomeComponent

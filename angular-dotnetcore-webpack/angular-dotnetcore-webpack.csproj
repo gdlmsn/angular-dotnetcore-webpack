@@ -27,8 +27,12 @@
     <None Remove="clientApp\components\app.component.css.map" />
     <None Remove="clientApp\components\app.component.min.css" />
     <None Remove="clientApp\components\home\components\file.ts" />
+    <None Remove="clientApp\components\home\components\home.component.css.map" />
+    <None Remove="clientApp\components\home\components\home.component.min.css" />
     <None Remove="clientApp\components\home\home.component.ts" />
     <None Remove="clientApp\components\home\home.module.ts" />
+    <None Remove="clientApp\components\shared\navigation\navigation.component.css.map" />
+    <None Remove="clientApp\components\shared\navigation\navigation.component.min.css" />
     <None Remove="clientApp\components\shared\navigation\navigation.component.ts" />
     <None Remove="clientApp\shared.module.ts" />
     <None Remove="clientApp\styles\color-function.css.map" />
@@ -49,7 +53,6 @@
 
   <ItemGroup>
     <Folder Include="clientApp\models\" />
-    <Folder Include="clientApp\services\" />
     <Folder Include="clientApp\pipes\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
