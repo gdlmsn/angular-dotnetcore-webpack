@@ -1,2 +1,4 @@
-﻿body {
+﻿
+.btn-dg-primary-button {
+    @include button-variant(#ff00dc, #bf1717,#ff0000, #ff5050, #eb720b, #ffd800);
 }

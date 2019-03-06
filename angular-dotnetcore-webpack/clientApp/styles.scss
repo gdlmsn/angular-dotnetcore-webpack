@@ -1,12 +1,17 @@
 ﻿@import "~bootstrap/scss/_functions.scss";
+@import 'styles/_color-function.scss';
 @import 'styles/_customVariables.scss';
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-
-@import 'styles/_color-function.scss';
+@import "styles/_customMixins.scss";
 @import "styles/theme1.scss";
 @import "styles/theme2.scss";
 @import "~bootstrap/scss/bootstrap";
 
 @import "~font-awesome/scss/variables";
+
+
+body{
+    background-color:color(gold);
+}
